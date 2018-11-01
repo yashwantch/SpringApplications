@@ -17,7 +17,7 @@ public class VendorServiceImp implements VendorService {
 	}
 	
 	@Override
-	public boolean loginService(Vendor vendor) {
+	public Vendor loginService(Vendor vendor) {
 		return vendordao.login(vendor);
 	}
 

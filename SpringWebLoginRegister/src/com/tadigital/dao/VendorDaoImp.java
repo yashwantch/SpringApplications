@@ -2,6 +2,7 @@ package com.tadigital.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -54,8 +55,55 @@ public class VendorDaoImp implements VendorDao {
 	}
 
 	@Override
-	public boolean login(Vendor vendor) {
-		return false;
+	public Vendor login(Vendor vendor) {
+		
+		Connection con = null;
+		Statement stmt = null;
+		ResultSet rs = null;
+		Vendor output = null;
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/ecommercedb", "root", "");
+			stmt = con.createStatement();
+
+			String sql = "SELECT * FROM vendor_information WHERE vendor_email ='" + vendor.getEmail()
+					+ "' AND vendor_password= '" + vendor.getPassword() + "'";
+
+			rs = stmt.executeQuery(sql);
+
+			output = new Vendor();
+			if (rs.next()) {
+				output.setName(rs.getString("vendor_fname"));
+			}
+
+		} catch (SQLException | ClassNotFoundException sqle) {
+			sqle.printStackTrace();
+		} finally {
+			if (rs != null) {
+				try {
+					rs.close();
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+				}
+			}
+			if (stmt != null) {
+				try {
+					stmt.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+			if (con != null) {
+				try {
+					con.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+		return output;
 	}
 
 }
