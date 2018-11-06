@@ -9,11 +9,11 @@
 	<body>
 		<form action="register" method="post">
 						<label for="name">Name</label> <input type="text"
-							 name="f1"><br />
+							 name="name"><br />
 						<label for="email">Email</label> <input type="text"
-							 name="f2"><br />
+							 name="email"><br />
 						<label for="pwd">Password</label> <input type="password"
-							 name="f3"><br />
+							 name="password"><br />
 						<button class="button button1">Register
 						</button>
 
