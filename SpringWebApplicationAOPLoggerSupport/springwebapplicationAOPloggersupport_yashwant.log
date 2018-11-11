@@ -1,0 +1,112 @@
+2018-11-11 12:02:31 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-11 12:02:31 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Sun Nov 11 12:02:31 IST 2018]; root of context hierarchy
+2018-11-11 12:02:31 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-11 12:02:31 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-11 12:02:31 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 434 ms
+2018-11-11 12:02:31 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-11 12:02:31 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Sun Nov 11 12:02:31 IST 2018]; parent: Root WebApplicationContext
+2018-11-11 12:02:31 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-11 12:02:31 WARN XmlWebApplicationContext:551 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vendorDeleteController' defined in file [D:\workspace\SpringWebApplicationAOPLoggerSupport\build\classes\com\tadigital\controller\VendorDeleteController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.tadigital.service.VendorService' available: expected single matching bean but found 2: vendorService,vendorServiceProxy
+2018-11-11 12:02:31 ERROR DispatcherServlet:502 - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'vendorDeleteController' defined in file [D:\workspace\SpringWebApplicationAOPLoggerSupport\build\classes\com\tadigital\controller\VendorDeleteController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.tadigital.service.VendorService' available: expected single matching bean but found 2: vendorService,vendorServiceProxy
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1198)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:481)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:308)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:682)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:553)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:171)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:640)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:419)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:875)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:349)
+	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1404)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1366)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:778)
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:262)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:520)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+	at org.eclipse.jetty.server.Server.start(Server.java:411)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:378)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at net.sourceforge.eclipsejetty.starter.jetty9.Jetty9Adapter.start(Jetty9Adapter.java:68)
+	at net.sourceforge.eclipsejetty.starter.common.AbstractJettyLauncherMain.launch(AbstractJettyLauncherMain.java:84)
+	at net.sourceforge.eclipsejetty.starter.jetty9.Jetty9LauncherMain.main(Jetty9LauncherMain.java:42)
+Caused by: org.springframework.beans.factory.NoUniqueBeanDefinitionException: No qualifying bean of type 'com.tadigital.service.VendorService' available: expected single matching bean but found 2: vendorService,vendorServiceProxy
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveNotUnique(DependencyDescriptor.java:173)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1064)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741)
+	... 38 more
+2018-11-11 12:10:34 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-11 12:10:34 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Sun Nov 11 12:10:34 IST 2018]; root of context hierarchy
+2018-11-11 12:10:34 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-11 12:10:34 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-11 12:10:34 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 379 ms
+2018-11-11 12:10:34 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-11 12:10:34 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Sun Nov 11 12:10:34 IST 2018]; parent: Root WebApplicationContext
+2018-11-11 12:10:34 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/ || /home]}" onto public java.lang.String com.tadigital.controller.HomeController.index()
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/delete{vid}]}" onto public java.lang.String com.tadigital.controller.VendorDeleteController.delete(int,javax.servlet.http.HttpSession)
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/updateVendor]}" onto public java.lang.String com.tadigital.controller.VendorListController.updateVendor(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/edit{vid}]}" onto public java.lang.String com.tadigital.controller.VendorListController.editVendor(int,javax.servlet.http.HttpSession)
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/vendorList]}" onto public java.lang.String com.tadigital.controller.VendorListController.allUsers(javax.servlet.http.HttpServletRequest)
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginform()
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registration()
+2018-11-11 12:10:35 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registerTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-11 12:10:35 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Sun Nov 11 12:10:34 IST 2018]; parent: Root WebApplicationContext
+2018-11-11 12:10:35 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Sun Nov 11 12:10:34 IST 2018]; parent: Root WebApplicationContext
+2018-11-11 12:10:35 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-11-11 12:10:35 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/csss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-11-11 12:10:35 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/jss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-11-11 12:10:35 INFO DispatcherServlet:508 - FrameworkServlet 'SpringFrontController': initialization completed in 642 ms
+2018-11-11 12:10:51 INFO HomeController excecution:17 - HomeController: index method : execution started
+2018-11-11 12:10:51 INFO HomeController excecution:19 - HomeController: index method : execution ended
+2018-11-11 12:10:55 INFO VendorListController excecution:35 - VendorListController : allUsers  method : execution started
+2018-11-11 12:10:55 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-11 12:10:55 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-11 12:10:55 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-11 12:10:55 INFO VendorDao excecution:93 - VendorDao : allUsers  method : execution started
+2018-11-11 12:10:55 INFO VendorDao excecution:111 - VendorDao : allUsers  method : execution ended
+2018-11-11 12:10:55 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-11 12:10:55 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@776f34d8, com.tadigital.entity.Vendor@291cf80, com.tadigital.entity.Vendor@7eca1822, com.tadigital.entity.Vendor@382e9205, com.tadigital.entity.Vendor@36e9b82c, com.tadigital.entity.Vendor@3a888cbe]
+2018-11-11 12:10:55 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-11 12:10:55 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-11 12:10:55 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@776f34d8, com.tadigital.entity.Vendor@291cf80, com.tadigital.entity.Vendor@7eca1822, com.tadigital.entity.Vendor@382e9205, com.tadigital.entity.Vendor@36e9b82c, com.tadigital.entity.Vendor@3a888cbe]
+2018-11-11 12:10:55 INFO VendorListController excecution:42 - VendorListController : allUsers  method : execution ended
+2018-11-11 12:11:01 INFO VendorDeleteController excecution:33 - VendorDeleteController : delete  method : execution started
+2018-11-11 12:11:01 INFO LoggingAspect:13 - vendorDelete execution started.
+2018-11-11 12:11:01 INFO LoggingAspect:13 - deleteVendor execution started.
+2018-11-11 12:11:01 INFO LoggingAspect:17 - deleteVendor execution finished.
+2018-11-11 12:11:01 INFO LoggingAspect:19 - deleteVendor return value is true
+2018-11-11 12:11:01 INFO LoggingAspect:17 - vendorDelete execution finished.
+2018-11-11 12:11:01 INFO LoggingAspect:19 - vendorDelete return value is true
+2018-11-11 12:11:01 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-11 12:11:01 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-11 12:11:01 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-11 12:11:01 INFO VendorDao excecution:93 - VendorDao : allUsers  method : execution started
+2018-11-11 12:11:01 INFO VendorDao excecution:111 - VendorDao : allUsers  method : execution ended
+2018-11-11 12:11:01 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-11 12:11:01 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@4a9b2146, com.tadigital.entity.Vendor@459c1d68, com.tadigital.entity.Vendor@3f25e460, com.tadigital.entity.Vendor@4dcd31f7, com.tadigital.entity.Vendor@5ecfa819]
+2018-11-11 12:11:01 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-11 12:11:01 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-11 12:11:01 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@4a9b2146, com.tadigital.entity.Vendor@459c1d68, com.tadigital.entity.Vendor@3f25e460, com.tadigital.entity.Vendor@4dcd31f7, com.tadigital.entity.Vendor@5ecfa819]
+2018-11-11 12:11:01 INFO VendorDeleteController excecution:44 - VendorDeleteController : delete  method : execution ended
