@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.tadigital.entity.Contact" table="contact_information">
+		<id name="id" column="con_id">
+			<generator class="native"/>
+		</id>
+		<property name="firstName" column="con_fname"/>
+		<property name="lastName" column="con_lname"/>
+		<property name="email" column="con_email"/>
+		<property name="subject" column="con_subject"/>
+		<property name="message" column="con_message"/>
+	</class>
+</hibernate-mapping>

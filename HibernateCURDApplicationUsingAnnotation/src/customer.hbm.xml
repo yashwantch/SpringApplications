@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.tadigital.entity.customer" table="customer_information" dynamic-insert="true">
+		<id name="id" column="cust_id">
+			<generator class="native"/>
+		</id>
+		<property name="firstName" column="cust_fname"/>
+		<property name="lastName" column="cust_lname"/>
+		<property name="dob" column="cust_dob"/>
+		<property name="gender" column="cust_gender"/>
+		<property name="email" column="cust_email"/>
+		<property name="contact" column="cust_contact"/>
+		<property name="password" column="cust_password"/>
+	</class>
+</hibernate-mapping>
