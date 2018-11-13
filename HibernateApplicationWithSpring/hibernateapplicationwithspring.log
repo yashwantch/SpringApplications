@@ -1,0 +1,262 @@
+2018-11-13 12:24:39 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-13 12:24:39 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Tue Nov 13 12:24:39 IST 2018]; root of context hierarchy
+2018-11-13 12:24:39 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-13 12:24:39 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-13 12:24:39 INFO Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-13 12:24:39 INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-11-13 12:24:39 INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-13 12:24:40 INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-11-13 12:24:40 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 1401 ms
+2018-11-13 12:24:40 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-13 12:24:40 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:24:40 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:24:40 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/ || /home]}" onto public java.lang.String com.tadigital.controller.HomeController.index()
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/delete{vid}]}" onto public java.lang.String com.tadigital.controller.VendorDeleteController.delete(int,javax.servlet.http.HttpSession)
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/vendorList]}" onto public java.lang.String com.tadigital.controller.VendorListController.allUsers(javax.servlet.http.HttpServletRequest)
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/edit{vid}]}" onto public java.lang.String com.tadigital.controller.VendorListController.editVendor(int,javax.servlet.http.HttpSession)
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/updateVendor]}" onto public java.lang.String com.tadigital.controller.VendorListController.updateVendor(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginform()
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registration()
+2018-11-13 12:24:41 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registerTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:24:41 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:24:40 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:24:41 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:24:40 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:24:41 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-11-13 12:24:41 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/csss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-11-13 12:24:41 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/jss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-11-13 12:24:41 INFO DispatcherServlet:508 - FrameworkServlet 'SpringFrontController': initialization completed in 519 ms
+2018-11-13 12:25:00 INFO VendorLoginController excecution:33 - VendorLoginController : loginform  method : execution started
+2018-11-13 12:25:00 INFO VendorLoginController excecution:35 - VendorLoginController : loginform  method : execution ended
+2018-11-13 12:25:18 INFO VendorLoginController excecution:44 - VendorLoginController : loginTask  method : execution started
+2018-11-13 12:25:18 INFO LoggingAspect:13 - loginService execution started.
+2018-11-13 12:25:18 INFO VendorService excecution:24 - VendorService : loginService  method : execution started
+2018-11-13 12:25:18 INFO LoggingAspect:13 - login execution started.
+2018-11-13 12:25:18 INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-13 12:25:19 INFO LoggingAspect:17 - login execution finished.
+2018-11-13 12:25:19 INFO LoggingAspect:19 - login return value is null
+2018-11-13 12:25:19 INFO VendorService excecution:28 - VendorService : loginService  method : execution ended
+2018-11-13 12:25:19 INFO LoggingAspect:17 - loginService execution finished.
+2018-11-13 12:25:19 INFO LoggingAspect:19 - loginService return value is null
+2018-11-13 12:25:19 INFO VendorLoginController excecution:51 - VendorLoginController : loginTask  method : execution ended
+2018-11-13 12:26:13 INFO VendorLoginController excecution:33 - VendorLoginController : loginform  method : execution started
+2018-11-13 12:26:13 INFO VendorLoginController excecution:35 - VendorLoginController : loginform  method : execution ended
+2018-11-13 12:26:18 INFO VendorListController excecution:35 - VendorListController : allUsers  method : execution started
+2018-11-13 12:26:18 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-13 12:26:18 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-13 12:26:18 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-13 12:26:18 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-13 12:26:18 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@341d32a4, com.tadigital.entity.Vendor@4136b701, com.tadigital.entity.Vendor@1bbadc70, com.tadigital.entity.Vendor@74ed7e3f, com.tadigital.entity.Vendor@29b8ea14, com.tadigital.entity.Vendor@5d42ce9d]
+2018-11-13 12:26:18 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-13 12:26:18 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-13 12:26:18 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@341d32a4, com.tadigital.entity.Vendor@4136b701, com.tadigital.entity.Vendor@1bbadc70, com.tadigital.entity.Vendor@74ed7e3f, com.tadigital.entity.Vendor@29b8ea14, com.tadigital.entity.Vendor@5d42ce9d]
+2018-11-13 12:26:18 INFO VendorListController excecution:42 - VendorListController : allUsers  method : execution ended
+2018-11-13 12:26:20 INFO VendorDeleteController excecution:33 - VendorDeleteController : delete  method : execution started
+2018-11-13 12:26:20 INFO LoggingAspect:13 - vendorDelete execution started.
+2018-11-13 12:26:20 INFO LoggingAspect:13 - deleteVendor execution started.
+2018-11-13 12:26:20 INFO LoggingAspect:17 - deleteVendor execution finished.
+2018-11-13 12:26:20 INFO LoggingAspect:19 - deleteVendor return value is true
+2018-11-13 12:26:20 INFO LoggingAspect:17 - vendorDelete execution finished.
+2018-11-13 12:26:20 INFO LoggingAspect:19 - vendorDelete return value is true
+2018-11-13 12:26:20 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-13 12:26:20 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-13 12:26:20 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-13 12:26:20 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-13 12:26:20 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@681c17d4, com.tadigital.entity.Vendor@7f48613b, com.tadigital.entity.Vendor@60b1145e, com.tadigital.entity.Vendor@276fb400, com.tadigital.entity.Vendor@2f45a58e]
+2018-11-13 12:26:20 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-13 12:26:20 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-13 12:26:20 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@681c17d4, com.tadigital.entity.Vendor@7f48613b, com.tadigital.entity.Vendor@60b1145e, com.tadigital.entity.Vendor@276fb400, com.tadigital.entity.Vendor@2f45a58e]
+2018-11-13 12:26:20 INFO VendorDeleteController excecution:44 - VendorDeleteController : delete  method : execution ended
+2018-11-13 12:26:22 INFO VendorListController excecution:50 - VendorListController : editVendor  method : execution started
+2018-11-13 12:26:22 INFO LoggingAspect:13 - editVendor execution started.
+2018-11-13 12:26:22 INFO LoggingAspect:13 - editVendor execution started.
+2018-11-13 12:26:22 INFO LoggingAspect:17 - editVendor execution finished.
+2018-11-13 12:26:22 INFO LoggingAspect:19 - editVendor return value is com.tadigital.entity.Vendor@abc7284
+2018-11-13 12:26:22 INFO LoggingAspect:17 - editVendor execution finished.
+2018-11-13 12:26:22 INFO LoggingAspect:19 - editVendor return value is com.tadigital.entity.Vendor@abc7284
+2018-11-13 12:26:26 INFO LoggingAspect:13 - updateVendor execution started.
+2018-11-13 12:26:26 INFO LoggingAspect:13 - updateVendor execution started.
+2018-11-13 12:26:26 INFO LoggingAspect:17 - updateVendor execution finished.
+2018-11-13 12:26:26 INFO LoggingAspect:19 - updateVendor return value is true
+2018-11-13 12:26:26 INFO LoggingAspect:17 - updateVendor execution finished.
+2018-11-13 12:26:26 INFO LoggingAspect:19 - updateVendor return value is true
+2018-11-13 12:26:26 INFO VendorListController excecution:35 - VendorListController : allUsers  method : execution started
+2018-11-13 12:26:26 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-13 12:26:26 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-13 12:26:26 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-13 12:26:26 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-13 12:26:26 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@59cf43da, com.tadigital.entity.Vendor@557661d0, com.tadigital.entity.Vendor@17532020, com.tadigital.entity.Vendor@36b4590f, com.tadigital.entity.Vendor@15c61d90]
+2018-11-13 12:26:26 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-13 12:26:26 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-13 12:26:26 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@59cf43da, com.tadigital.entity.Vendor@557661d0, com.tadigital.entity.Vendor@17532020, com.tadigital.entity.Vendor@36b4590f, com.tadigital.entity.Vendor@15c61d90]
+2018-11-13 12:26:26 INFO VendorListController excecution:42 - VendorListController : allUsers  method : execution ended
+2018-11-13 12:28:29 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-13 12:28:29 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Tue Nov 13 12:28:29 IST 2018]; root of context hierarchy
+2018-11-13 12:28:29 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-13 12:28:29 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-13 12:28:29 INFO Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-13 12:28:29 INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-11-13 12:28:29 INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-13 12:28:30 INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-11-13 12:28:30 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 1472 ms
+2018-11-13 12:28:30 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-13 12:28:30 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:28:30 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:28:30 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/ || /home]}" onto public java.lang.String com.tadigital.controller.HomeController.index()
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/delete{vid}]}" onto public java.lang.String com.tadigital.controller.VendorDeleteController.delete(int,javax.servlet.http.HttpSession)
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/updateVendor]}" onto public java.lang.String com.tadigital.controller.VendorListController.updateVendor(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/vendorList]}" onto public java.lang.String com.tadigital.controller.VendorListController.allUsers(javax.servlet.http.HttpServletRequest)
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/edit{vid}]}" onto public java.lang.String com.tadigital.controller.VendorListController.editVendor(int,javax.servlet.http.HttpSession)
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginform()
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registration()
+2018-11-13 12:28:31 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registerTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:28:31 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:28:30 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:28:31 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:28:30 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:28:31 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-11-13 12:28:31 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/csss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-11-13 12:28:31 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/jss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-11-13 12:28:31 INFO DispatcherServlet:508 - FrameworkServlet 'SpringFrontController': initialization completed in 618 ms
+2018-11-13 12:29:13 INFO VendorLoginController excecution:44 - VendorLoginController : loginTask  method : execution started
+2018-11-13 12:29:13 INFO LoggingAspect:13 - loginService execution started.
+2018-11-13 12:29:13 INFO VendorService excecution:24 - VendorService : loginService  method : execution started
+2018-11-13 12:29:13 INFO LoggingAspect:13 - login execution started.
+2018-11-13 12:29:13 INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-13 12:31:07 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-13 12:31:07 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Tue Nov 13 12:31:07 IST 2018]; root of context hierarchy
+2018-11-13 12:31:07 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-13 12:31:07 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-13 12:31:07 INFO Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-13 12:31:07 INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-11-13 12:31:07 INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-13 12:31:08 INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-11-13 12:31:08 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 1553 ms
+2018-11-13 12:31:08 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-13 12:31:08 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:31:08 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:31:08 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/ || /home]}" onto public java.lang.String com.tadigital.controller.HomeController.index()
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/delete{vid}]}" onto public java.lang.String com.tadigital.controller.VendorDeleteController.delete(int,javax.servlet.http.HttpSession)
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/updateVendor]}" onto public java.lang.String com.tadigital.controller.VendorListController.updateVendor(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/edit{vid}]}" onto public java.lang.String com.tadigital.controller.VendorListController.editVendor(int,javax.servlet.http.HttpSession)
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/vendorList]}" onto public java.lang.String com.tadigital.controller.VendorListController.allUsers(javax.servlet.http.HttpServletRequest)
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginform()
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registration()
+2018-11-13 12:31:09 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registerTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:31:09 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:31:08 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:31:09 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:31:08 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:31:09 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-11-13 12:31:09 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/csss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-11-13 12:31:09 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/jss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-11-13 12:31:09 INFO DispatcherServlet:508 - FrameworkServlet 'SpringFrontController': initialization completed in 584 ms
+2018-11-13 12:31:26 INFO VendorLoginController excecution:44 - VendorLoginController : loginTask  method : execution started
+2018-11-13 12:31:26 INFO LoggingAspect:13 - loginService execution started.
+2018-11-13 12:31:26 INFO VendorService excecution:24 - VendorService : loginService  method : execution started
+2018-11-13 12:31:26 INFO LoggingAspect:13 - login execution started.
+2018-11-13 12:31:26 INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-13 12:31:26 INFO LoggingAspect:17 - login execution finished.
+2018-11-13 12:31:26 INFO LoggingAspect:19 - login return value is null
+2018-11-13 12:31:26 INFO VendorService excecution:28 - VendorService : loginService  method : execution ended
+2018-11-13 12:31:26 INFO LoggingAspect:17 - loginService execution finished.
+2018-11-13 12:31:26 INFO LoggingAspect:19 - loginService return value is null
+2018-11-13 12:31:26 INFO VendorLoginController excecution:51 - VendorLoginController : loginTask  method : execution ended
+2018-11-13 12:32:15 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-13 12:32:15 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Tue Nov 13 12:32:15 IST 2018]; root of context hierarchy
+2018-11-13 12:32:15 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-13 12:32:16 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-13 12:32:16 INFO Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-13 12:32:16 INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-11-13 12:32:16 INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-13 12:32:16 INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-11-13 12:32:17 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 1486 ms
+2018-11-13 12:32:17 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-13 12:32:17 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:32:17 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:32:17 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/ || /home]}" onto public java.lang.String com.tadigital.controller.HomeController.index()
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/delete{vid}]}" onto public java.lang.String com.tadigital.controller.VendorDeleteController.delete(int,javax.servlet.http.HttpSession)
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/updateVendor]}" onto public java.lang.String com.tadigital.controller.VendorListController.updateVendor(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/edit{vid}]}" onto public java.lang.String com.tadigital.controller.VendorListController.editVendor(int,javax.servlet.http.HttpSession)
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/vendorList]}" onto public java.lang.String com.tadigital.controller.VendorListController.allUsers(javax.servlet.http.HttpServletRequest)
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginform()
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registration()
+2018-11-13 12:32:17 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registerTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:32:17 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:32:17 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:32:17 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:32:17 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:32:17 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-11-13 12:32:17 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/csss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-11-13 12:32:17 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/jss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-11-13 12:32:17 INFO DispatcherServlet:508 - FrameworkServlet 'SpringFrontController': initialization completed in 472 ms
+2018-11-13 12:32:22 INFO VendorLoginController excecution:33 - VendorLoginController : loginform  method : execution started
+2018-11-13 12:32:22 INFO VendorLoginController excecution:35 - VendorLoginController : loginform  method : execution ended
+2018-11-13 12:32:32 INFO VendorLoginController excecution:44 - VendorLoginController : loginTask  method : execution started
+2018-11-13 12:32:32 INFO LoggingAspect:13 - loginService execution started.
+2018-11-13 12:32:32 INFO VendorService excecution:24 - VendorService : loginService  method : execution started
+2018-11-13 12:32:32 INFO LoggingAspect:13 - login execution started.
+2018-11-13 12:32:32 INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-13 12:32:33 INFO LoggingAspect:17 - login execution finished.
+2018-11-13 12:32:33 INFO LoggingAspect:19 - login return value is com.tadigital.entity.Vendor@6f7ae7c2
+2018-11-13 12:32:33 INFO VendorService excecution:28 - VendorService : loginService  method : execution ended
+2018-11-13 12:32:33 INFO LoggingAspect:17 - loginService execution finished.
+2018-11-13 12:32:33 INFO LoggingAspect:19 - loginService return value is com.tadigital.entity.Vendor@6f7ae7c2
+2018-11-13 12:32:33 INFO VendorLoginController excecution:58 - VendorLoginController : loginTask  method : execution ended
+2018-11-13 12:39:40 INFO ContextLoader:304 - Root WebApplicationContext: initialization started
+2018-11-13 12:39:40 INFO XmlWebApplicationContext:583 - Refreshing Root WebApplicationContext: startup date [Tue Nov 13 12:39:40 IST 2018]; root of context hierarchy
+2018-11-13 12:39:40 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/root-context.xml]
+2018-11-13 12:39:41 INFO DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2018-11-13 12:39:41 INFO Version:45 - HHH000412: Hibernate Core {5.2.17.Final}
+2018-11-13 12:39:41 INFO Environment:213 - HHH000206: hibernate.properties not found
+2018-11-13 12:39:41 INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-11-13 12:39:42 INFO Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2018-11-13 12:39:43 INFO ContextLoader:344 - Root WebApplicationContext: initialization completed in 2676 ms
+2018-11-13 12:39:43 INFO DispatcherServlet:489 - FrameworkServlet 'SpringFrontController': initialization started
+2018-11-13 12:39:43 INFO XmlWebApplicationContext:583 - Refreshing WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:39:43 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:39:43 INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/web-context.xml]
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/ || /home]}" onto public java.lang.String com.tadigital.controller.HomeController.index()
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/delete{vid}]}" onto public java.lang.String com.tadigital.controller.VendorDeleteController.delete(int,javax.servlet.http.HttpSession)
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/vendorList]}" onto public java.lang.String com.tadigital.controller.VendorListController.allUsers(javax.servlet.http.HttpServletRequest)
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/updateVendor]}" onto public java.lang.String com.tadigital.controller.VendorListController.updateVendor(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpSession)
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/edit{vid}]}" onto public java.lang.String com.tadigital.controller.VendorListController.editVendor(int,javax.servlet.http.HttpSession)
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorLoginController.loginform()
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[GET]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registration()
+2018-11-13 12:39:44 INFO RequestMappingHandlerMapping:543 - Mapped "{[/registration],methods=[POST]}" onto public java.lang.String com.tadigital.controller.VendorRegisterController.registerTask(com.tadigital.entity.Vendor,javax.servlet.http.HttpServletRequest)
+2018-11-13 12:39:44 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:39:43 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:39:44 INFO RequestMappingHandlerAdapter:556 - Looking for @ControllerAdvice: WebApplicationContext for namespace 'SpringFrontController-servlet': startup date [Tue Nov 13 12:39:43 IST 2018]; parent: Root WebApplicationContext
+2018-11-13 12:39:44 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-11-13 12:39:44 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/csss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-11-13 12:39:44 INFO SimpleUrlHandlerMapping:362 - Mapped URL path [/jss/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-11-13 12:39:44 INFO DispatcherServlet:508 - FrameworkServlet 'SpringFrontController': initialization completed in 774 ms
+2018-11-13 12:39:46 INFO VendorListController excecution:35 - VendorListController : allUsers  method : execution started
+2018-11-13 12:39:46 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-13 12:39:46 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-13 12:39:46 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-13 12:39:46 INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-13 12:39:46 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-13 12:39:46 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@7b775ac4, com.tadigital.entity.Vendor@bb99623, com.tadigital.entity.Vendor@35c5341d, com.tadigital.entity.Vendor@6c799b1e, com.tadigital.entity.Vendor@72f1ae3e]
+2018-11-13 12:39:46 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-13 12:39:46 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-13 12:39:46 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@7b775ac4, com.tadigital.entity.Vendor@bb99623, com.tadigital.entity.Vendor@35c5341d, com.tadigital.entity.Vendor@6c799b1e, com.tadigital.entity.Vendor@72f1ae3e]
+2018-11-13 12:39:46 INFO VendorListController excecution:42 - VendorListController : allUsers  method : execution ended
+2018-11-13 12:39:54 INFO VendorListController excecution:50 - VendorListController : editVendor  method : execution started
+2018-11-13 12:39:54 INFO LoggingAspect:13 - editVendor execution started.
+2018-11-13 12:39:54 INFO LoggingAspect:13 - editVendor execution started.
+2018-11-13 12:39:54 INFO LoggingAspect:17 - editVendor execution finished.
+2018-11-13 12:39:54 INFO LoggingAspect:19 - editVendor return value is com.tadigital.entity.Vendor@439f8dab
+2018-11-13 12:39:54 INFO LoggingAspect:17 - editVendor execution finished.
+2018-11-13 12:39:54 INFO LoggingAspect:19 - editVendor return value is com.tadigital.entity.Vendor@439f8dab
+2018-11-13 12:40:00 INFO LoggingAspect:13 - updateVendor execution started.
+2018-11-13 12:40:00 INFO LoggingAspect:13 - updateVendor execution started.
+2018-11-13 12:40:00 INFO LoggingAspect:17 - updateVendor execution finished.
+2018-11-13 12:40:00 INFO LoggingAspect:19 - updateVendor return value is true
+2018-11-13 12:40:00 INFO LoggingAspect:17 - updateVendor execution finished.
+2018-11-13 12:40:00 INFO LoggingAspect:19 - updateVendor return value is true
+2018-11-13 12:40:00 INFO VendorListController excecution:35 - VendorListController : allUsers  method : execution started
+2018-11-13 12:40:00 INFO LoggingAspect:13 - selectAllUsers execution started.
+2018-11-13 12:40:00 INFO VendorService excecution:48 - VendorService : selectAllUsers  method : execution started
+2018-11-13 12:40:00 INFO LoggingAspect:13 - allUsers execution started.
+2018-11-13 12:40:00 INFO LoggingAspect:17 - allUsers execution finished.
+2018-11-13 12:40:00 INFO LoggingAspect:19 - allUsers return value is [com.tadigital.entity.Vendor@6bc4e2c0, com.tadigital.entity.Vendor@7bb8cad6, com.tadigital.entity.Vendor@eaba7, com.tadigital.entity.Vendor@5af6f26d, com.tadigital.entity.Vendor@16e8c911]
+2018-11-13 12:40:00 INFO VendorService excecution:52 - VendorService : selectAllUsers  method : execution ended
+2018-11-13 12:40:00 INFO LoggingAspect:17 - selectAllUsers execution finished.
+2018-11-13 12:40:00 INFO LoggingAspect:19 - selectAllUsers return value is [com.tadigital.entity.Vendor@6bc4e2c0, com.tadigital.entity.Vendor@7bb8cad6, com.tadigital.entity.Vendor@eaba7, com.tadigital.entity.Vendor@5af6f26d, com.tadigital.entity.Vendor@16e8c911]
+2018-11-13 12:40:00 INFO VendorListController excecution:42 - VendorListController : allUsers  method : execution ended
